@@ -1,0 +1,63 @@
+const appname = "HONALONDON RADIO";
+const events = "Events";
+const title = "Title";
+const dateAndTime = "Date and Time";
+const seeAll = "See All";
+const date = "Date";
+const location = "Location";
+const category = "Category:";
+const view = "View";
+const arabicName = "فتاوى استثمارية";
+const description = "Description";
+const descriptiondetails =
+    "الغوص في التحليل المعمق لاهم التطورات الاقتصادية العالمية و اهم التطورات السياسية من خلال تفاعلاتها المباشرة و تاثيرها علي الاقتصاد العالمي كالازمة الاوكرانية  فتاوى استثمارية هو برنامج يومي عبر اثير راديو هنا لندن يعرف المستمع العربي اينما كان بأهم الوجهات الاستثمارية العالمية و تحديد مقومات النجاح و تحقيق الربحية و  من جهة اخرى التعريف بالمخاطر و امكانية مواجهة الخسارة ";
+
+const all = "All";
+const crypto = "Crypto";
+const drugs = "Drugs";
+const car = "Car";
+const todayEvents = "Today Events";
+const comingEvents = "Coming Events";
+const search = "Search";
+const viewAll = "View All";
+const raiders = "Raiders";
+const raidersDes = "The share of American pharmaceutical company Pfizer.....";
+const cars = "Cars";
+const carsDes = "Investment tip of the day is classic cars.....";
+const datedetails = "Wed,feb 19, 9:00-12:00";
+const london = "London";
+const descDetaileng =
+    "The investment fatwa for today that can be applicable for the rest of the year is: Moving away from cryptocurrencies in the forefront is bitcoin, and for several reasons, the global economy is taking investors a far destination all away from stocks that are linked to speculation and certainly cryptocurrencies are in the first place. To know other reasons, message me through the page..";
+const readMore = "Read More";
+const coins = "Coins";
+const estiCoins = "Estimated Coins";
+const buyCoins = "Buy Coins";
+const buycoins = "Buy - Coins";
+const completed = "Completed";
+const marketOrder = "Market Order";
+const price = "Price";
+const amount = "Amount";
+const total = "Total";
+const youWillbe = "You Will be Charged Usd:";
+const availableCoins = "Available Coins";
+const contine = "Continue";
+const confirmPin = "Confirm PIN";
+const enterYourSecurity = "Enter Your Security PIN to Confirm the transaction";
+const usd = "USD";
+const successfull = "Successfull!";
+const chat = "Chat";
+const honaLondon = "HonaLondon";
+const online = "Online";
+const settings = "Settings";
+const primaryCity = "Primary City";
+
+const compyevent = "Copy Event to calendar";
+const managevents = "Manage Events";
+const manageLog = "Manage Log in options";
+const acountSetting = "Account Setting";
+const barcelona = "Barcelona";
+const profile = "Profile";
+
+const coin = "Coin";
+const home = "Home";
+const pr = '1.203';
