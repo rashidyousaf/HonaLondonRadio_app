@@ -1,5 +1,6 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:honalondon_radio/views/admin_screen/add_event-screen.dart';
 import 'package:honalondon_radio/views/admin_screen/admin_screen.dart';
 import 'package:honalondon_radio/views/chat_screen/chat_screen.dart';
 import 'package:honalondon_radio/views/coin_screen/coin_screen.dart';
@@ -36,7 +37,7 @@ class BottomNavScreen extends StatelessWidget {
       const CoinScreen(),
       const ChatScreen(),
       const ProfileScreen(),
-      const AdminScreen(),
+      const AddEventScreen(),
     ];
     return Scaffold(
         body: Column(

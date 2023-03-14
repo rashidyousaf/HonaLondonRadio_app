@@ -3,11 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../consts/const.dart';
 
 class CustomTextfiled extends StatelessWidget {
-  const CustomTextfiled({super.key, required this.titile, required this.hint});
+  CustomTextfiled(
+      {super.key, required this.titile, required this.hint, this.controller});
 
   final String titile;
   final String hint;
-
+  TextEditingController? controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -24,6 +25,9 @@ class CustomTextfiled extends StatelessWidget {
           height: 10.h,
         ),
         TextField(
+          controller: controller,
+          keyboardType: TextInputType.multiline,
+          maxLines: null,
           decoration: InputDecoration(
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(width: 1.w, color: nBlueColor),

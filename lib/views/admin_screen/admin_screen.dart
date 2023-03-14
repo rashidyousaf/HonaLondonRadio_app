@@ -1,6 +1,7 @@
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:honalondon_radio/common_widgets/custom_button.dart';
 import 'package:honalondon_radio/consts/const.dart';
+import 'package:honalondon_radio/services/auth_service.dart';
 
 import '../../common_widgets/custom_textfield.dart';
 
@@ -9,6 +10,10 @@ class AdminScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AuthService authService = AuthService();
+    TextEditingController emailController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+
     return Scaffold(
       body: SafeArea(
           child: Column(
@@ -30,7 +35,8 @@ class AdminScreen extends StatelessWidget {
               left: 20.w,
               right: 20.w,
             ),
-            child: const CustomTextfiled(
+            child: CustomTextfiled(
+              controller: emailController,
               titile: 'Enter email',
               hint: 'Email',
             ),
@@ -38,7 +44,8 @@ class AdminScreen extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
                 left: 20.w, right: 20.w, top: 30.h, bottom: 30.h),
-            child: const CustomTextfiled(
+            child: CustomTextfiled(
+              controller: passwordController,
               titile: 'Enter password',
               hint: 'Password',
             ),
@@ -47,7 +54,10 @@ class AdminScreen extends StatelessWidget {
             height: 60.h,
             child: CustomButton(
               title: "Login",
-              onTap: () {},
+              onTap: () async {
+                await authService.siginUser(
+                    emailController.text, passwordController.text, context);
+              },
             ),
           )
         ],

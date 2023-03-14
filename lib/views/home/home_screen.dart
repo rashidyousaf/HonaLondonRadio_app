@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -75,6 +76,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 onTap: () {
                   Navigator.pop(context);
+                  UrlLauncherService().launchUrl1(Uri.parse(
+                      'https://www.facebook.com/profile.php?id=100090558244331&mibextid=ZbWKwL'));
                 },
               ),
               ListTile(
@@ -89,6 +92,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 onTap: () {
                   Navigator.pop(context);
+                  UrlLauncherService().launchUrl1(Uri.parse(
+                      'https://instagram.com/honalondonradio?igshid=YmMyMTA2M2Y='));
                 },
               ),
               ListTile(
@@ -103,24 +108,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 onTap: () {
                   Navigator.pop(context);
+
+                  UrlLauncherService().launchUrl1(Uri.parse(
+                      'https://twitter.com/honalondonradio?t=8SRnW41t0i6m4tuP632SjA&s=09'));
                 },
               ),
-              ListTile(
-                leading: Icon(
-                  FontAwesomeIcons.whatsapp,
-                  color: Colors.green,
-                  size: 30.sp,
-                ),
-                title: Text(
-                  "WhatsApp",
-                  style: myTS20(fontSize: 14.sp, fontWeight: FontWeight.w500),
-                ),
-                onTap: () {
-                  Navigator.pop(context);
-                  UrlLauncherService()
-                      .launchUrl1(Uri.parse('https://www.google.com'));
-                },
-              ),
+              // ListTile(
+              //   leading: Icon(
+              //     FontAwesomeIcons.whatsapp,
+              //     color: Colors.green,
+              //     size: 30.sp,
+              //   ),
+              //   title: Text(
+              //     "WhatsApp",
+              //     style: myTS20(fontSize: 14.sp, fontWeight: FontWeight.w500),
+              //   ),
+              //   onTap: () {},
+              // ),
               ListTile(
                 leading: Icon(
                   FontAwesomeIcons.wordpress,
@@ -132,15 +136,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: myTS20(fontSize: 14.sp, fontWeight: FontWeight.w500),
                 ),
                 onTap: () async {
-                  final Uri url = Uri(
-                    scheme: 'tel',
-                    path: "+923075648199",
-                  );
-                  if (await canLaunchUrl(url)) {
-                    await launchUrl(url);
-                  } else {
-                    print("cannot launch this url");
-                  }
+                  Navigator.pop(context);
+                  UrlLauncherService().launchUrl1(
+                      Uri.parse('http://www.honalondonradio.co.uk/'));
                 },
               ),
               ListTile(
@@ -156,7 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 onTap: () async {
                   final Uri url = Uri(
                     scheme: 'tel',
-                    path: "+923075648199",
+                    path: "+447778417444",
                   );
                   if (await canLaunchUrl(url)) {
                     await launchUrl(url);

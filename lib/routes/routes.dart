@@ -8,6 +8,7 @@ import 'package:honalondon_radio/views/Presenter_screen/presenter_one_screen.dar
 import 'package:honalondon_radio/views/Presenter_screen/presenter_sex_screen.dart';
 import 'package:honalondon_radio/views/Presenter_screen/presenter_three_screen.dart';
 import 'package:honalondon_radio/views/Presenter_screen/presenter_two_screen.dart';
+import 'package:honalondon_radio/views/admin_screen/add_event-screen.dart';
 import 'package:honalondon_radio/views/coin_screen/coin_screen1.dart';
 import 'package:honalondon_radio/views/home/events_screen.dart';
 import 'package:honalondon_radio/views/home/home_screen.dart';
@@ -61,6 +62,8 @@ class Routes {
         return MaterialPageRoute(builder: (context) => const CoinScreen2());
       case "/coins3":
         return MaterialPageRoute(builder: (context) => const CoinScreen3());
+      case "/aES":
+        return MaterialPageRoute(builder: (context) => const AddEventScreen());
     }
     return null;
   }
